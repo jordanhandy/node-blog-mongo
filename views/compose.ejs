@@ -1,0 +1,18 @@
+<%# Compose Page
+Contains Bootstrapped form %>
+<%# Posted to the /compose route %>
+<%- include("partials/header") -%>
+<h1>Compose</h1>
+<form class="" action="/compose" method="post">
+  <div class="form-group">
+    <label for="postTitle">Post Title</label>
+    <input type="text" class="form-control" name="postTitle" id="postTitle" aria-describedby="titleHelp" placeholder="Enter Post Title">
+    <small id="titleHelp" class="form-text text-muted">A title for your blog post.</small><br>
+    <label for="postContent">Post Content</label>
+    <textarea class="form-control" id="postContent" name="postContent" rows="8" cols="80" aria-describedby="contentHelp"></textarea>
+    <small id="contentHelp" class="form-text text-muted">Your post body.</small>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<%- include("partials/footer") -%>
